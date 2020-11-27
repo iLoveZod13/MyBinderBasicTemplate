@@ -4,9 +4,10 @@
 
 A Binder-compatible repo with a `requirements.txt` file.
 
-Access this Binder at the following URL
+To use this repo to create Binder instance, please go to:
+https://mybinder.org/
 
-http://mybinder.org/v2/gh/binder-examples/requirements/master
+Then copy the GitHub URL and click LAUNCH button.
 
 ## Notes
 The `requirements.txt` file should list all Python libraries that your notebooks
