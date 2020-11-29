@@ -1,2 +1,2 @@
 #!/bin/bash
-jupyter-contrib-nbextension install --user
+#jupyter-contrib-nbextension install --user
