@@ -2,7 +2,6 @@
 
 [![Binder](http://mybinder.org/badge_logo.svg)](http://mybinder.org/v2/gh/binder-examples/requirements/master)
 
-A Binder-compatible repo with a `requirements.txt` file.
 
 To use this repo to create Binder instance, please go to:
 https://mybinder.org/
