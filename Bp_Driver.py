@@ -7,22 +7,21 @@ pd.set_option('display.width', None)
 pd.set_option('max_colwidth',None)
 
 
-class Wpbp:
-    wpbp_ind = 0
-    payroll_area = ''
-    per_area = ''
-    per_subarea = ''
-    ee_grp = ''
-    ee_subgrp = ''
-    # cost_center = ''
+class ItItem:
+    wpbp_ind: 0
+    wage_type: ''
+    amount: 0.0
+    num: 0.0
+    rate: 0.0
 
-    def __init__(self, wpbp_ind,payroll_area,per_area,per_subarea,ee_grp,ee_subgrp):
+    def __init__(self, wpbp_ind, wage_type,amount=0.0, num=0.0, rate=0.0):
         self.wpbp_ind = wpbp_ind
-        self.payroll_area = payroll_area
-        self.per_area = per_area
-        self.per_subarea = per_subarea
-        self.ee_grp = ee_grp
-        self.ee_subgrp = ee_subgrp
+        self.wage_type = wage_type
+        self.amount = amount
+        self.num = num
+        self.rate = rate
+
+
 
 class Person:
     pernr = '00000000'
@@ -32,6 +31,13 @@ class Person:
 
     def __repr__(self):
         return self.pernr
+
+    def __setattr__(self, name, value):
+        if name == 'it':
+            self.it.clear()
+            for i in value:
+                self.it.append(i.__dict__)
+
 
 
 def get_companies(bpcw_path):
