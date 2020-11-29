@@ -1,8 +1,11 @@
-FROM python:3.7-slim
+FROM python:3.8-slim
 # install the notebook package
 RUN pip install --no-cache --upgrade pip && \
     pip install --no-cache notebook && \
-    pip install jupyter_contrib_nbextensions
+    pip install --no-cache numpy==1.18.5 && \
+    pip install --no-cache pandas==1.0.4 && \
+    pip install --no-cache xlrd==1.2.0 && \
+    pip install --no-cache jupyter_contrib_nbextensions
 
 # create user with a home directory
 ARG NB_USER
