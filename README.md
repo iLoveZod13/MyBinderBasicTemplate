@@ -10,4 +10,4 @@ https://mybinder.org/
 Then copy the GitHub URL and click LAUNCH button.
 
 ## Notes
-I added xlrd python package to the requirements.txt file so that in the created Binder environment, we can import xlrd package to process MS-EXCEL files.
+Add Dockerfile to luanch the image via Docker so that we can run jupyter-nbextension command to enable jupyter-nbextension.
