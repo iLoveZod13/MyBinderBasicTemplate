@@ -6,6 +6,7 @@ RUN pip install --no-cache --upgrade pip && \
     pip install --no-cache pandas==1.0.4 && \
     pip install --no-cache xlrd==1.2.0 && \
     pip install --no-cache jupyter_contrib_nbextensions
+    pip install --no-cache jupyter-offlinenotebook
 
 # create user with a home directory
 ARG NB_USER
